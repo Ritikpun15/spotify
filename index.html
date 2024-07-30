@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="icon" type="image/x-icon" href="images/Spotify_icon.svg.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="mainContainer">
+      <div id="container1">
+        <div id="nav">
+          <ul type="none">
+            <li id="spotify-logo">
+              <i class="fa-brands fa-spotify"></i>Spotify
+            </li>
+            <li class="link"><i class="fa-solid fa-house"></i>Home</li>
+            <li class="link">
+              <i class="fa-solid fa-arrow-trend-up"></i>Trending Songs
+            </li>
+            <li class="link"><i class="fa-solid fa-bolt"></i>What's new</li>
+            <li class="link"><i class="fa-solid fa-gear"></i>Setting</li>
+          </ul>
+        </div>
+        <div id="mylibrary">
+          <div id="library">
+            <i
+              class="fa-sharp fa-solid fa-bars"
+              id="bar"
+              style="color: #ffffff"
+            ></i
+            ><span class="yourlibrary">Your Library</span
+            ><i class="fa-solid fa-plus" style="color: #ffffff; cursor:pointer"></i>
+          </div>
+          <div class="playlist">
+            <p id="para1">Create your first playlist</p>
+            <p id="para2">It's easy, we'll help you</p>
+            <button id="playlistbtn">Create playlist</button>
+          </div>
+          <button class="lang">
+            <i class="fa-solid fa-globe" style="color: #ffffff"></i>English
+          </button>
+        </div>
+      </div>
+      <div id="main">
+        <div id="container2">
+          <div id="searchBar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              name="search"
+              id="searchbar"
+              placeholder="What do you want to listen to?"
+            />
+          </div>
+          <div id="login">
+            <button id="signupBtn">Sign up</button>
+            <button id="loginBtn">Log in</button>
+          </div>
+        </div>
+        <div id="container3">
+          <div id="songsList">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="num">#</th>
+                  <th class="title">Title</th>
+                  <th class="duration"><i class="fa-regular fa-clock"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="num">1</td>
+                  <td class="title">
+                    <div class="songItems">
+                      <img
+                        src=""
+                        alt="Pehle Bhi Main"
+                        height="40px"
+                        width="auto"
+                      />
+                      <span class="songName"></span>
+                    </div>
+                    <span class="songPlay">
+                      <i id="0" class="fa-regular fa-circle-play playBtn"></i
+                    ></span>
+                  </td>
+                  <td class="duration">4:10</td>
+                </tr>
+                <tr>
+                  <td class="num">2</td>
+                  <td class="title">
+                    <div class="songItems">
+                      <img src="" alt="Soulmate" height="40px" width="auto" />
+                      <span class="songName"></span>
+                    </div>
+                    <span class="songPlay">
+                      <i id="1" class="fa-regular fa-circle-play playBtn"></i
+                    ></span>
+                  </td>
+                  <td class="duration">3:33</td>
+                </tr>
+
+                <tr>
+                  <td class="num">3</td>
+                  <td class="title">
+                    <div class="songItems">
+                      <img src="" alt="Sprinter" height="40px" width="auto" />
+                      <span class="songName"></span>
+                    </div>
+                    <span class="songPlay">
+                      <i id="2" class="fa-regular fa-circle-play playBtn"></i
+                    ></span>
+                  </td>
+                  <td class="duration">3:39</td>
+                </tr>
+                <tr>
+                  <td class="num">4</td>
+                  <td class="title">
+                    <div class="songItems">
+                      <img src="" alt="Doja" height="40px" width="auto" />
+                      <span class="songName"></span>
+                    </div>
+                    <span class="songPlay">
+                      <i id="3" class="fa-regular fa-circle-play playBtn"></i
+                    ></span>
+                  </td>
+                  <td class="duration">1:37</td>
+                </tr>
+                <tr>
+                  <td class="num">5</td>
+                  <td class="title">
+                    <div class="songItems">
+                      <img
+                        src=""
+                        alt="Love Yourself"
+                        height="40px"
+                        width="auto"
+                      />
+                      <span class="songName"></span>
+                    </div>
+                    <span class="songPlay">
+                      <i id="4" class="fa-regular fa-circle-play playBtn"></i
+                    ></span>
+                  </td>
+                  <td class="duration">3:53</td>
+                </tr>
+                <tr>
+                  <td class="num">6</td>
+                  <td class="title">
+                    <div class="songItems">
+                      <img
+                        src=""
+                        height="40px"
+                        width="auto"
+                      />
+                      <span class="songName"></span>
+                    </div>
+                    <span class="songPlay">
+                      <i id="5" class="fa-regular fa-circle-play playBtn"></i
+                    ></span>
+                  </td>
+                  <td class="duration">2:53</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="bottom">
+        <div id="progressBar">
+          <input
+            type="range"
+            name="range"
+            id="myprogressBar"
+            min="0"
+            max="100"
+            value="0"
+          />
+        </div>
+        <span class="gify">
+          <span class="songinfo">
+            <img
+              src="images/Pehle Bhi Main.jpeg"
+              alt=""
+              height="80px"
+              width="auto"
+              id="masterImg"
+            />
+            <span id="masterSong"> &#8212; Pehle Bhi Main - Animal</span>
+          </span>
+          <div class="icons">
+            <img src="gif2.gif" alt="" height="45px" id="gif" />
+            <i class="fa-solid fa-2x fa-backward-step" id="previous"></i>
+            <i class="fa-regular fa-2x fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-2x fa-forward-step" id="next"></i>
+          </div>
+        </span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
